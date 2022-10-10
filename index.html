@@ -10,6 +10,16 @@
     <button onclick="fetchTodos()">Fetch Todos</button>
     <button onclick="logTodos()">Log Todos</button>
     <button onclick="populateTodos()">Populate Todos</button>
+    <div class="filterRow">
+        <label for="userIdChoice">Filter By User Id</label>
+        <input type="number" name="userIdChoice" id="id-input" min="1" max="10">
+        <button onclick="filterTodos()">Filter Todos</button>
+    </div>
+    <div class="complete">
+        <button onclick="completedTodos()">Completed Todos</button>
+        <button onclick="incompletedTodos()">Incompleted Todos</button>
+        <button onclick="removeTodos()">Clear All</button>
+    </div>
     <ol id="todo-list">
     <!-- LIs will go here -->
     </ol>
